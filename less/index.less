@@ -58,12 +58,20 @@ html {
     }
   }
   footer {
+    padding: 1rem;
     background-color: @primary-color;
-    color: @primary-font-color;
-    display: flex;
-    flex-direction: column;
+    border: none;
     li {
-      padding: 1.2rem 3rem;
+      display: none;
+    }
+    @media (min-width: 800px) {
+      color: @primary-font-color;
+      display: flex;
+      flex-direction: column;
+      li {
+        display: initial;
+        padding: 1.2rem 3rem;
+      }
     }
   }
 }

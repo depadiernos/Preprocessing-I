@@ -168,13 +168,23 @@ html {
   width: 100%;
 }
 .container footer {
+  padding: 1rem;
   background-color: steelblue;
-  color: white;
-  display: flex;
-  flex-direction: column;
+  border: none;
 }
 .container footer li {
-  padding: 1.2rem 3rem;
+  display: none;
+}
+@media (min-width: 800px) {
+  .container footer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  .container footer li {
+    display: initial;
+    padding: 1.2rem 3rem;
+  }
 }
 .about {
   padding: 1rem;
