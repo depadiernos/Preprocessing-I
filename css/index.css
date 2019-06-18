@@ -148,6 +148,9 @@ html {
   text-decoration: none;
   color: white;
 }
+.container h2 {
+  font-size: 2rem;
+}
 .container header {
   background-color: steelblue;
   color: white;
@@ -164,19 +167,73 @@ html {
 .container header .logo img {
   width: 100%;
 }
-.container .about {
+.container footer {
+  background-color: steelblue;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.container footer li {
+  padding: 1.2rem 3rem;
+}
+.about {
   padding: 1rem;
   text-align: center;
 }
-.container .about h1 {
+.about h1 {
   font-size: 3rem;
   padding: 1rem 0;
 }
-.container .about .slogan {
+.about .slogan {
   font-size: 3rem;
   padding: 1rem 0;
   font-family: 'Lobster', cursive;
 }
-.container .about p {
+.about img {
+  width: 50%;
+}
+.about p {
   text-align: initial;
+}
+.skills .card {
+  border: 1px solid gray;
+  border-radius: 2px;
+  margin: 1rem;
+}
+.skills .card div {
+  height: 100%;
+  background-color: gray;
+}
+.skills .card div h3 {
+  padding: 1rem;
+}
+.skills .card p {
+  padding: 1rem;
+}
+.portfolio .card {
+  border: 1px solid gray;
+  border-radius: 2px;
+  margin: 1rem;
+  padding: 1rem;
+}
+.portfolio .card h3 {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+.portfolio .card .screenshot {
+  display: flex;
+  justify-content: center;
+}
+.portfolio .card .screenshot img {
+  width: 75%;
+  align-self: center;
+}
+.portfolio .card button {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 2px;
+  border: 1px solid gray;
+}
+.portfolio .card button a {
+  color: dimgray;
 }
