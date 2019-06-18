@@ -1,5 +1,7 @@
-@import url(reset.less);
-@import url('https://fonts.googleapis.com/css?family=Asap|Lobster&display=swap');
+@import "reset.less";
+@import 'https://fonts.googleapis.com/css?family=Asap|Lobster&display=swap';
+
+// Variables
 
 @primary-color: steelblue;
 @secondary-color: gray;
@@ -8,6 +10,13 @@
 @secondary-font-color: black;
 @main-font-family: 'Asap', sans-serif;
 @secondary-font-family: 'Lobster', cursive;
+
+// Mixins
+
+.font-props(@size, @padding: 1rem 0) {
+  font-size: @size;
+  padding: @padding;
+}
 
 html {
   font-size: 62.5%;
@@ -32,11 +41,12 @@ html {
     }
   }
   .about {
+    padding: 1rem;
     h1 {
-      font-size: 2em;
+      .font-props(3rem);
     }
     h3 {
-      font-size: 1;
+      .font-props(2rem);
     }
   }
 }
