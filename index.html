@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume - Dennis Padiernos</title>
-
+    <link rel="stylesheet" href="css/all.css" />
     <link rel="stylesheet" href="css/index.css" />
 
     <!--[if lt IE 9]>
@@ -17,7 +17,7 @@
     <div class="container">
       <header>
         <nav>
-          <div class="logo"><img src="img/logo.png" alt=""></div>
+          <div class="logo"><img src="img/logo.png" alt="" /></div>
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -31,22 +31,38 @@
       <section class="about">
         <h1>Dennis Padiernos - Full Stack Software Engineer</h1>
         <h3 class="slogan">I code for fun and profit!</h3>
+        <img src="img/dennis-padiernos.png" alt="Dennis Padiernos" />
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et,
-          deleniti? Sunt neque tempora necessitatibus sit omnis dignissimos
-          maxime corporis incidunt quae eum explicabo, minima mollitia amet,
-          nulla, in dolor facere.
+          I'm a Full Stack Developer and code mostly in Javascript, but I do
+          dabble in Ruby, Python, C and Go. My mild-mannered alter-ego is a
+          “fun-loving, cheesy and corny jokes telling from time to time” type of
+          guy, who tinkers with tech and electronics when there is spare time --
+          Taking apart broken laptops and fixing them, finding fun ways to use a
+          Raspberry Pi (The Pi 3 is awesome, by the way) and other SBCs,
+          building custom mechanical keyboards and customizing the wiring on my
+          electric guitar. I fluently speak in English and Tagalog (Filipino)
+          and write quite well in English and passibly in Tagalog.
         </p>
-        <div>
-
-        </div>
+        <div></div>
       </section>
       <section class="skills">
         <h2>Skills</h2>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
+        <div class="card">
+          <div><h3>Web Development</h3></div>
+          <p>HTML/CSS/Javascript</p>
+        </div>
+        <div class="card">
+          <div><h3>App Development</h3></div>
+          <p>ReactJS/NodeJS/Various NPM modules</p>
+        </div>
+        <div class="card">
+          <div><h3>Decoupled Web Development (JAMstack):</h3></div>
+          <p>Serverless Functions (AWS Lambda Functions) and SPA Frontends</p>
+        </div>
+        <div class="card">
+          <div><h3>Backend/API Development</h3></div>
+          <p>NodeJS or Rails</p>
+        </div>
       </section>
       <section class="work">
         <h2>Work History</h2>
@@ -56,9 +72,50 @@
       </section>
       <section class="portfolio">
         <h2>Portfolio</h2>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
+        <div class="card">
+          <div class="screenshot">
+            <img src="img/hzdf-maps.png" alt="Token-hider-inator" />
+          </div>
+          <h3><i class="fas fa-bolt"></i> Token-hider-inator</h3>
+          <p>
+            This project uses a lambda function deploy to Netlify to hide my
+            Google Map API token. The site itself takes an address and returns
+            coordinates for that address.
+          </p>
+          <button>
+            <a href=""><i class="fab fa-github"></i> Github Repo</a>
+          </button>
+        </div>
+        <div class="card">
+          <div class="screenshot">
+            <img src="img/stthomas.png" alt="Local Church Website" />
+          </div>
+          <h3><i class="fab fa-react"></i> Local Church Website</h3>
+          <p>
+            This project used ReactJS and React-Easy-State. I wrote a function
+            to pull the Daily Readings from an API endpoint that returned JSONP.
+            The color of the site also changes based on the Liturgical Season.
+          </p>
+          <button>
+            <a href=""><i class="fab fa-github"></i> Github Repo</a>
+          </button>
+        </div>
+        <div class="card">
+          <div class="screenshot">
+            <img src="img/zenaidas.png" alt="Family Restaurant Website" />
+          </div>
+          <h3>
+            <i class="fab fa-html5"></i><i class="fab fa-css3"></i
+            ><i class="fab fa-js"></i> Family Restaurant Website
+          </h3>
+          <p>
+            A website I coded in html/css/js in the very early days of learning
+            to code. I'm including here to remind me of how far I've come.
+          </p>
+          <button>
+            <a href=""><i class="fab fa-github"></i> Github Repo</a>
+          </button>
+        </div>
       </section>
       <section class="contact">
         <form action="" id="contact"></form>
