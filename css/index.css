@@ -150,6 +150,7 @@ html {
 }
 .container h2 {
   font-size: 2rem;
+  padding: 1rem;
 }
 .container header {
   background-color: steelblue;
@@ -256,9 +257,70 @@ html {
 .portfolio .card button {
   background-color: white;
   padding: 1rem;
+  margin: 2rem;
   border-radius: 2px;
   border: 1px solid gray;
 }
 .portfolio .card button a {
   color: dimgray;
+}
+.contact {
+  padding: 2rem;
+}
+.contact h3 {
+  display: block;
+  background-color: steelblue;
+  color: white;
+  font-size: 2rem;
+  padding: 2rem;
+}
+.contact h4 {
+  display: block;
+  font-size: 1.5rem;
+  margin: 0.5rem 0 1.5rem;
+}
+.contact textarea {
+  height: 10rem;
+  max-width: 100%;
+  resize: none;
+}
+.contact textarea:focus {
+  border: 1px solid gray;
+  outline: 0;
+}
+.contact button[type='submit'] {
+  background: black;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin: 0 0 5px;
+  padding: 10px;
+  width: 100%;
+}
+.contact button[type='submit']:hover {
+  background: gray;
+  transition: background-color 0.3s ease-in-out;
+}
+.contact button[type='submit']:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+.contact input:focus {
+  border: 1px solid gray;
+  outline: 0;
+}
+.contact input,
+.contact textarea {
+  background: white;
+  border: 1px solid #cccccc;
+  margin: 0 0 5px;
+  padding: 10px;
+  width: 100%;
+}
+.contact fieldset {
+  border: medium none;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
 }
