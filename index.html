@@ -1,19 +1,175 @@
-<!doctype html>
+<!DOCTYPE html>
 
-<html lang="en">
-<head>
-  <meta charset="utf-8">
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume - Dennis Padiernos</title>
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/index.css" />
 
-  <title>My Resume</title>
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
 
-  <link rel="stylesheet" href="css/index.css">
-
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-</head>
-
-<body>
-  <h1>My Resume</h1>
-</body>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <div class="logo"><img src="img/logo.png" alt="" /></div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Work History</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="about">
+        <h1>Dennis Padiernos - Full Stack Software Engineer</h1>
+        <h3 class="slogan">I code for fun and other techie stuff!</h3>
+        <img src="img/dennis-padiernos.png" alt="Dennis Padiernos" />
+        <p>
+          I'm a Full Stack Developer and code mostly in Javascript, but I do
+          dabble in Ruby, Python, C and Go. My mild-mannered alter-ego is a
+          “fun-loving, cheesy and corny jokes telling from time to time” type of
+          guy. I spend my time tinkering with tech and electronics when there is
+          spare time -- Fixing laptops, finding fun ways to use a Raspberry Pi
+          and other gadgets, building mechanical keyboards. I also love to play
+          my guitar and violin. I fluently speak in English and Tagalog
+          (Filipino) and write quite well in English and passably in Tagalog.
+        </p>
+        <div></div>
+      </section>
+      <section class="skills">
+        <h2>Skills</h2>
+        <div class="card">
+          <div><h3>Web Development</h3></div>
+          <p>HTML/CSS/Javascript</p>
+        </div>
+        <div class="card">
+          <div><h3>App Development</h3></div>
+          <p>ReactJS/NodeJS/Various NPM modules</p>
+        </div>
+        <div class="card">
+          <div><h3>Decoupled Web Development (JAMstack):</h3></div>
+          <p>Serverless Functions (AWS Lambda Functions) and SPA Frontends</p>
+        </div>
+        <div class="card">
+          <div><h3>Backend/API Development</h3></div>
+          <p>NodeJS or Rails</p>
+        </div>
+      </section>
+      <section class="work">
+        <h2>Work History</h2>
+        <div class="card">
+          <div><h3>2018-Present</h3></div>
+          <p>Support Engineer @ Netlify</p>
+        </div>
+        <div class="card">
+          <div><h3>2016-2017</h3></div>
+          <p>Support Engineer @ Olark</p>
+        </div>
+        <div class="card">
+          <div><h3>2012-2016</h3></div>
+          <p>Support Engineer @ CallCentric</p>
+        </div>
+      </section>
+      <section class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="card">
+          <div class="screenshot">
+            <img src="img/hzdf-maps.png" alt="Token-hider-inator" />
+          </div>
+          <h3><i class="fas fa-bolt"></i> Token-hider-inator</h3>
+          <p>
+            This project uses a lambda function deploy to Netlify to hide my
+            Google Map API token. The site itself takes an address and returns
+            coordinates for that address.
+          </p>
+          <button>
+            <a href=""><i class="fab fa-github"></i> Github Repo</a>
+          </button>
+        </div>
+        <div class="card">
+          <div class="screenshot">
+            <img src="img/stthomas.png" alt="Local Church Website" />
+          </div>
+          <h3><i class="fab fa-react"></i> Local Church Website</h3>
+          <p>
+            This project used ReactJS and React-Easy-State. I wrote a function
+            to pull the Daily Readings from an API endpoint that returned JSONP.
+            The color of the site also changes based on the Liturgical Season.
+          </p>
+          <button>
+            <a href=""><i class="fab fa-github"></i> Github Repo</a>
+          </button>
+        </div>
+        <div class="card">
+          <div class="screenshot">
+            <img src="img/zenaidas.png" alt="Family Restaurant Website" />
+          </div>
+          <h3>
+            <i class="fab fa-html5"></i><i class="fab fa-css3"></i
+            ><i class="fab fa-js"></i> Family Restaurant Website
+          </h3>
+          <p>
+            A website I coded in html/css/js in the very early days of learning
+            to code. I'm including here to remind me of how far I've come.
+          </p>
+          <button>
+            <a href=""><i class="fab fa-github"></i> Github Repo</a>
+          </button>
+        </div>
+      </section>
+      <section>
+        <form class="contact" name="contact" action="" method="post">
+          <h3>Quick Contact</h3>
+          <h4>Contact us today, and get reply with in 24 hours!</h4>
+          <fieldset>
+            <input
+              placeholder="Your name"
+              type="text"
+              tabindex="1"
+              required
+              autofocus
+            />
+          </fieldset>
+          <fieldset>
+            <input
+              placeholder="Your Email Address"
+              type="email"
+              tabindex="2"
+              required
+            />
+          </fieldset>
+          <fieldset>
+            <textarea
+              placeholder="Type your Message Here...."
+              tabindex="5"
+              required
+            ></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" data-submit="...Sending">
+              Submit
+            </button>
+          </fieldset>
+        </form>
+      </section>
+      <footer>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Works</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </footer>
+    </div>
+  </body>
 </html>
